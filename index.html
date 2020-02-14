@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark text-white">
+        <a class="navbar-brand">Weather Dashboard</a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <aside class="col-md-3">
+                <h3>Search a city</h3>
+                <!-- Search -->
+                <form class="form-inline js-city-input">
+                    <input class="form-control mr-sm-2 city-input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <!-- Menu -->
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                
+            </aside>
+            <main class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title city-heading">Weather forcast for the day.</h5>
+                        <div class="weather-icon"></div>
+                        <ul>
+                            <li>
+                                Temperature : <span class="temp"></span> 
+                            </li>
+                            <li>
+                                Humidity : <span class="humidity"></span>
+                            </li>
+                            <li>
+                                <span class="wind-speed">Wind speeds</span>
+                            </li>
+                            <li>
+                                <span class="uvIndex">UV index (Should I make another call to get this??? This call comes back with lat and long which is what the other call for UV needs)</span>
+                                <!-- https://openweathermap.org/api/uvi -->
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

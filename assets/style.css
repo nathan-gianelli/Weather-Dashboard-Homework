@@ -1,0 +1,9 @@
+.list-group {
+    margin: 10px
+}
+body {
+    background: #f2f2f2;
+}
+.weather-icon, .city-heading {
+    display: inline-block;
+}
