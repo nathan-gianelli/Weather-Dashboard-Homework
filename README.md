@@ -1,7 +1,6 @@
 # Weather-Dashboard-Homework
 
-This is a simple web page app that allows the user to search any city and retrieve the current weather using a API.
-When you find the city of your choice you will then see the current temperature, the humidity, and the wind speed in mph.
+This is a simple web page app that allows the user to search any city and pulls the current weather from the OpenWeather api, and displays it on the page.
 
 # Tools Used
 1. OpenWeathermap.org
