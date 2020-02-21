@@ -10,7 +10,7 @@ $(".js-city-input").on("submit", function(e){
 
 // Grabs Data From Service for Current Conditions
 function dataGrab(cityState) {
-    var APIURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityState}&appid=${APIKEY}`;
+    var APIURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityState}&appid=${APIKEY}`;
     
     // Object for Url Parama
     var data = {
@@ -21,7 +21,7 @@ function dataGrab(cityState) {
 
     // Use Ajax
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather",
+        url: "https://api.openweathermap.org/data/2.5/weather",
         type: "get",
         data: data
     }).done(function(data){
@@ -30,7 +30,7 @@ function dataGrab(cityState) {
         $('span.temp').html(data.main.temp+" &deg;F");
         $('span.humidity').text(data.main.humidity+"%");
         $('span.wind-speed').text(data.wind.speed+" MPH");
-        $('.weather-icon').html(`<img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png">`);
+        $('.weather-icon').html(`<img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">`);
         // var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
     });
 };
